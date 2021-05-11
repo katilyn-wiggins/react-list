@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeyArnoldContainer renders a list of characters to the page 1`] = `
+<ul
+  aria-label="characters"
+/>
+`;

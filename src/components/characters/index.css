@@ -1,0 +1,20 @@
+ul {
+  border: black 10px solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+li {
+  border: blue 5px solid;
+  width: 150px;
+  margin: 10px;
+}
+
+img {
+  height: 100px;
+}

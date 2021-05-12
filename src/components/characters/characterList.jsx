@@ -4,13 +4,15 @@ import Character from '../characters/character';
 import './index.css'; 
 
 const CharacterList = ({ characters }) => (
-    <ul aria-label="characters" className="all-characters">
+    <ul aria-label="characters">
     {characters.map((character) => (
-        <li key={character.id} className="individual-character"> 
+        <li key={character.id}> 
+            <a> 
             <Character 
                 name={character.name}
                 image={character.image}
             />
+            </a>
         </li>
     ))}
     </ul>

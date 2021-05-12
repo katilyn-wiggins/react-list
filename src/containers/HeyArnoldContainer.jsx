@@ -3,12 +3,13 @@ import CharacterList from '../components/characters/characterList'
 import {findCharacters} from '../services/heyArnoldApi';
 
 export default class HeyArnoldContainer extends Component {
+
     state = {
         loading: true, 
         characters: []
     }
 
-    async componentDidMount() {
+   componentDidMount = async() => {
         const characters = await findCharacters(); 
         this.setState({
             characters,
@@ -16,6 +17,12 @@ export default class HeyArnoldContainer extends Component {
         });
     }
 
+    componentWillUnmount() {
+        this.setState = (state, callback)=> {
+            return;
+        };
+    }
+    
     render() {
         const { loading, characters } = this.state; 
 

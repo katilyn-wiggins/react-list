@@ -7,12 +7,11 @@ const CharacterList = ({ characters }) => (
     <ul aria-label="characters">
     {characters.map((character) => (
         <li key={character.id}> 
-            <a> 
             <Character 
+                id={character.id}
                 name={character.name}
                 image={character.image}
             />
-            </a>
         </li>
     ))}
     </ul>
@@ -20,7 +19,7 @@ const CharacterList = ({ characters }) => (
 CharacterList.propTypes =  {
     characters: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired,
+            id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             image: PropTypes.string.isRequired
         })

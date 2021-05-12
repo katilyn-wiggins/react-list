@@ -1,10 +1,11 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import HeyArnoldContainer from './HeyArnoldContainer';
+import {MemoryRouter} from 'react-router';
 
 describe('HeyArnoldContainer', () => {
     it('renders a list of characters to the page', async() => {
-        render(<HeyArnoldContainer />);
+        render(<MemoryRouter> <HeyArnoldContainer />  </MemoryRouter>);
 
         screen.getByText('Loading...')
 

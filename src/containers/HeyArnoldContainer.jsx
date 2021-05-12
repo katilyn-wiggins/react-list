@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CharacterList from '../components/characters/characterList'
 import {findCharacters} from '../services/heyArnoldApi';
 
 export default class HeyArnoldContainer extends Component {
@@ -20,7 +21,7 @@ export default class HeyArnoldContainer extends Component {
 
         if (loading) return <h1>Loading...</h1>;
 
-        return <ul aria-label="characters"></ul>
+        return <CharacterList characters={characters} /> 
 
     }
 }

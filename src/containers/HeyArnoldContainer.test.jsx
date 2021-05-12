@@ -13,3 +13,15 @@ describe('HeyArnoldContainer', () => {
         expect(ul).toMatchSnapshot(); 
     }); 
 })
+
+// describe('HeyArnoldDetailContainer', () => {
+//     it('renders a single character to the page', async() => {
+//         render(<MemoryRouter> <HeyArnoldDetailContainer />  </MemoryRouter>);
+//         const div = await screen.findAllByAltText('individual-character')
+
+//         expect(div).not.toBeEmptyDOMElement();
+//         // screen.getByText('Loading...')
+
+//         // expect(div).toMatchSnapshot(); 
+//     }); 
+// })

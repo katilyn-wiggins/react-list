@@ -18,7 +18,6 @@ export default class HeyArnoldDetailContainer extends Component {
             loading: false,
             characterData: await findCharacter(this.props.match.params.id), 
         });
-        await console.log(this.state.characterData)
     }
 
     componentWillUnmount () {

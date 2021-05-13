@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types'; 
 
 const CharacterDetail = ({ name, image }) => (
-        <div alt="individual-character">  
+        <figure aria-label="individual" role="individual">  
             <img src={image} alt={name} /> 
+            <figcaption>
             <p>{name}</p>
-        </div> 
+            </figcaption>
+        </figure> 
 );
 
 

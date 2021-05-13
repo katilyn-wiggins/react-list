@@ -17,12 +17,7 @@ export default class HeyArnoldContainer extends Component {
         });
     }
 
-    componentWillUnmount() {
-        this.setState = (state, callback)=> {
-            return;
-        };
-    }
-    
+
     render() {
         const { loading, characters } = this.state; 
 
